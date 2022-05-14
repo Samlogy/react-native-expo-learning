@@ -1,9 +1,14 @@
-# NativeBase TypeScript Expo Template
+# React Native
 
-The official NativeBase TypeScript template for [Expo](https://docs.expo.io/)
+## Tech Stack:
+
+1. React Native
+2. Expo
+3. Native Base
+4. Typescript
 
 ## Usage
 
 ```sh
-expo init my-app --template @native-base/expo-template-typescript
+npm i && npm start
 ```
