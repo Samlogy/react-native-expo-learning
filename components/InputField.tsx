@@ -28,6 +28,7 @@ const InputField = ({ control, errors, placeholder, name, defaultValue, label }:
             borderStyle="solid"
             borderColor="warmGray.200"
             _focus={{ borderColor: "warning.600" }}
+            _dark={{ bg: "warmGray.400" }}
           />
         )}
         name={name}

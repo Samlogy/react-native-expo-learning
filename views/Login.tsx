@@ -2,7 +2,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Center, VStack, Heading } from "native-base";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { InputField, Layout } from "../components";
+import { InputField, Layout, ThemeToggle } from "../components";
 import { loginSchema } from "../lib/validation";
 
 function Login() {
@@ -34,6 +34,7 @@ function Login() {
           <Button onPress={() => reset()} colorScheme="orange" variant="subtle" borderRadius={"10px"} fontWeight="600" textTransform={"uppercase"}>
             Reset
           </Button>
+          <ThemeToggle />
         </VStack>
       </Center>
     </Layout>
