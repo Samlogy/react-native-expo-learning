@@ -1,5 +1,6 @@
-import { Center, Heading, VStack } from "native-base";
+import { Center, Heading, VStack, Text } from "native-base";
 import React from "react";
+import { Link } from "react-router-native";
 import { ThemeToggle } from "../components";
 import { NativeBaseIcon } from "../assets/Icons";
 
@@ -10,6 +11,9 @@ const Home = () => {
         <NativeBaseIcon />
         <Heading size="lg"> Home </Heading>
         <ThemeToggle />
+        <Link to={`/login`} underlayColor="#f0f4f7">
+          <Text> Login </Text>
+        </Link>
       </VStack>
     </Center>
   );

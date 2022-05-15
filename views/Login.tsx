@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { InputField, Layout, ThemeToggle } from "../components";
 import { loginSchema } from "../lib/validation";
 
-function Login() {
+const Login = () => {
   const {
     control,
     handleSubmit,
@@ -39,6 +39,6 @@ function Login() {
       </Center>
     </Layout>
   );
-}
+};
 
 export default Login;
