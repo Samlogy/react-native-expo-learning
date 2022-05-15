@@ -1,5 +1,3 @@
-import { NativeBaseProvider, extendTheme } from "native-base";
-
 export const fontConfig = {
   Roboto: {
     300: {
