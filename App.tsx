@@ -1,8 +1,7 @@
 import { NativeBaseProvider } from "native-base";
 import React from "react";
 import theme from "./theme";
-import { Home } from "./views";
-import { Login } from "./components";
+import { Home, Login } from "./views";
 
 export default function App() {
   return (

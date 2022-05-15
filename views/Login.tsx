@@ -1,8 +1,8 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Button, Center, VStack } from "native-base";
+import { Button, Center, VStack, Heading } from "native-base";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { InputField } from "../components";
+import { InputField, Layout } from "../components";
 import { loginSchema } from "../lib/validation";
 
 function Login() {
@@ -16,21 +16,27 @@ function Login() {
   });
   const onLogin = (data: any) => {
     console.log("login ", data);
+    // api call
   };
   return (
-    <Center _dark={{ bg: "blueGray.900" }} _light={{ bg: "blueGray.50" }} px={4} flex={1}>
-      <VStack width="80%" space={4}>
-        <InputField control={control} errors={errors} placeholder="email@example.com" name="email" defaultValue={""} label="Email Address" />
-        <InputField control={control} errors={errors} placeholder="*********" name="password" defaultValue={""} label="Password" />
+    <Layout>
+      <Center>
+        <VStack justifyContent="center" width="80%" h="100%" space={4}>
+          <Heading size="xl" textAlign="center" textTransform="uppercase">
+            Login
+          </Heading>
 
-        <Button onPress={handleSubmit(onLogin)} colorScheme="orange">
-          Submit
-        </Button>
-        <Button onPress={() => reset()} colorScheme="orange" variant="subtle">
-          Reset
-        </Button>
-      </VStack>
-    </Center>
+          <InputField control={control} errors={errors} placeholder="email@example.com" name="email" defaultValue={""} label="Email Address" />
+          <InputField control={control} errors={errors} placeholder="*********" name="password" defaultValue={""} label="Password" />
+          <Button onPress={handleSubmit(onLogin)} colorScheme="orange" borderRadius={"10px"} fontWeight="600" textTransform={"uppercase"}>
+            Submit
+          </Button>
+          <Button onPress={() => reset()} colorScheme="orange" variant="subtle" borderRadius={"10px"} fontWeight="600" textTransform={"uppercase"}>
+            Reset
+          </Button>
+        </VStack>
+      </Center>
+    </Layout>
   );
 }
 

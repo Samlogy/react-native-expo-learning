@@ -16,7 +16,20 @@ const InputField = ({ control, errors, placeholder, name, defaultValue, label }:
       <FormControl.Label>{label}</FormControl.Label>
       <Controller
         control={control}
-        render={({ field: { onChange, onBlur, value } }) => <Input onBlur={onBlur} placeholder={placeholder} onChangeText={onChange} value={value} />}
+        render={({ field: { onChange, onBlur, value } }) => (
+          <Input
+            onBlur={onBlur}
+            placeholder={placeholder}
+            onChangeText={onChange}
+            value={value}
+            bg="white"
+            borderRadius={"10px"}
+            borderWidth="1"
+            borderStyle="solid"
+            borderColor="warmGray.200"
+            _focus={{ borderColor: "warning.600" }}
+          />
+        )}
         name={name}
         defaultValue={defaultValue}
       />
