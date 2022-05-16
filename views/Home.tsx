@@ -15,8 +15,8 @@ const Home = () => {
         <NativeBaseIcon />
         <Heading size="lg"> Home </Heading>
         <ThemeToggle />
-        <Link to={`/login`} underlayColor="#f0f4f7">
-          <Text> Login </Text>
+        <Link to={`/form`} underlayColor="#f0f4f7">
+          <Text> Form Example </Text>
         </Link>
       </VStack>
     </Center>
