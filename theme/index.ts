@@ -1,5 +1,5 @@
-import { extendTheme } from "native-base";
-import { themeConfig, fontConfig, fonts, colors, breakpoints } from "./utilities";
+import {extendTheme} from 'native-base';
+import {themeConfig, fontConfig, fonts, colors, breakpoints} from './utilities';
 
 const theme = extendTheme({
   // fontConfig,

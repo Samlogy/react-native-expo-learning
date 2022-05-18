@@ -3,9 +3,9 @@ export const request = async (method: string, url: string, data?: any, headers =
     method: method,
     body: data,
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "Accept-Language": "fr",
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      'Accept-Language': 'fr',
       //   Authorization: token ? `Bearer ${token}` : undefined,
       ...headers,
     },

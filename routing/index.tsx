@@ -1,6 +1,6 @@
-import React from "react";
-import { NativeRouter, Route, Routes } from "react-router-native";
-import { Home, FormExample } from "../views";
+import React from 'react';
+import {NativeRouter, Route, Routes} from 'react-router-native';
+import {Home, FormExample} from '../views';
 
 const Routing = () => {
   return (
